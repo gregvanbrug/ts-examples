@@ -52,7 +52,7 @@ const pets: Pet[] = [
   { name: 'Pompeii', type: Pets.LIZARD }
 ];
 
-function greetPets(person: Person, pets: Pet[]): void {
+function greetPets(person: Person, pets?: Pet[]): void {
   const petNames = pets
     ? pets
         .map(({ name }) => name)
